@@ -25,7 +25,7 @@ This raw data is exported as a ___raw_sensor_data.csv___ file. Our job is to bui
 #### 1. Data Collection (___/scripts/data_collection.py___)
 - A Python script that simulates raw sensor data.
 
-- It generates a CSV file named raw_sensor_data.csv to act as our "source" data.
+- It generates a CSV file named ___raw_sensor_data.csv___ to act as our "source" data.
 
 #### 2. ETL Pipeline (___/etl_pipeline.ipynb___)
 - A Jupyter Notebook that performs the Extract, Transform, and Load (ETL) process.
@@ -34,7 +34,7 @@ This raw data is exported as a ___raw_sensor_data.csv___ file. Our job is to bui
 
 - Transform: Cleans the data, converts data types, and engineers a new feature: drilling_efficiency.
 
-- Load: Saves the cleaned, transformed data into a SQLite database (oilfield_data.db).
+- Load: Saves the cleaned, transformed data into a SQLite database (___oilfield_data.db___).
 
 #### 3. Database (___oilfield_data.db___)
 - A simple, file-based SQLite database that stores our clean "production-ready" data.
@@ -44,7 +44,7 @@ This raw data is exported as a ___raw_sensor_data.csv___ file. Our job is to bui
 
 - A web-based, interactive dashboard built with Streamlit.
 
-- It reads directly from the oilfield_data.db to visualize KPIs, charts, and trends.
+- It reads directly from the ___oilfield_data.db___ to visualize KPIs, charts, and trends.
 
 ## How to Run This Project
 
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 ```
 
 ### 1. Step 1: Generate Raw Data
-Run the data collection script. This will create raw_sensor_data.csv in your project's root folder.
+Run the data collection script. This will create ___raw_sensor_data.csv___ in your project's root folder.
 ```
 python scripts/data_collection.py
 ```
@@ -78,7 +78,7 @@ python scripts/data_collection.py
 jupyter notebook
 ```
 
-- Open etl_pipeline.ipynb in your browser and run all the cells. This will create the oilfield_data.db file.
+- Open ___etl_pipeline.ipynb___ in your browser and run all the cells. This will create the ___oilfield_data.db___ file.
 
 ### 3. Step 3: Launch the Dashboard
 
