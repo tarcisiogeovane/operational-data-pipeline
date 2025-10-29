@@ -45,7 +45,7 @@ df = load_data()
 if not df.empty:
 
     # --- Sidebar Filters ---
-    st.sidebar.header("ð%C2%9B%C2%9Bï¸%C2%8F Filters")
+    st.sidebar.header("Filters")
 
     # Get unique values for filters
     all_rigs = df['rig_id'].unique()
@@ -74,7 +74,7 @@ if not df.empty:
     )
 
     # --- Main Page ---
-    st.title("ð%C2%93%C2%9A Oilfield Operations Dashboard")
+    st.title("Oilfield Operations Dashboard")
     st.markdown("Live sensor data from drilling operations.")
 
     # --- Key Performance Indicators (KPIs) ---
