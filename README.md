@@ -64,13 +64,13 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 1. Step 1: Generate Raw Data
+### 2. Step 1: Generate Raw Data
 Run the data collection script. This will create ___raw_sensor_data.csv___ in your project's root folder.
 ```
 python scripts/data_collection.py
 ```
 
-### 2. Step 2: Run the ETL Pipeline
+### 3. Step 2: Run the ETL Pipeline
 
 - Run the Jupyter Notebook to process the raw data and create the database.
 - Start Jupyter:
@@ -80,7 +80,7 @@ jupyter notebook
 
 - Open ___etl_pipeline.ipynb___ in your browser and run all the cells. This will create the ___oilfield_data.db___ file.
 
-### 3. Step 3: Launch the Dashboard
+### 4. Step 3: Launch the Dashboard
 
 - Run the Streamlit app from your terminal:
 ```
